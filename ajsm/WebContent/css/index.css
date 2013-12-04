@@ -1,0 +1,93 @@
+.top{
+	width:90%;
+	height:40px;
+	padding:0 5%;
+	line-height:40px;
+	font-size:18px;
+	background-image:url(../images/toolbar_back_bg.png);
+	background-position:100% 100%;
+}
+.top img{
+	height:21px;
+	margin-top:10px;
+}
+
+.banner{
+	margin:2% auto 0;
+	overflow:hidden;
+	position:relative;
+}
+.banner .bannerList{
+	background:#d8d8d8;
+	border-radius:5px;
+	position:relative;
+	float:left;
+}
+.banner .bannerList img{
+	width:100%;
+	display:block;
+}
+.banner .bannerList p{
+	width:100%;
+	position:absolute;
+	height:40px;
+	line-height:40px;
+	background:rgba(0,0,0,0.5);
+	color:#fff;
+	font-size:16px;
+	margin-top:-40px;
+}
+.banner ul{
+	position:absolute;
+	right:20px;
+	bottom:50px;
+}
+.banner ul li{
+	float:left;
+	width:10px;
+	height:10px;
+	margin-left:5px;
+	background-image:url(../images/banner.png);
+	background-size:100% 100%;
+}
+.banner ul li.cur{
+	background-image:url(../images/bannerhover.png);
+	background-size:100% 100%;
+}
+.bannerShadow{
+	height:6px;
+	margin:0 auto;
+	background-image:url(../images/homeshadow.png);
+	background-size:100% 100%;
+}
+
+
+.homeMenu{
+	width:96%;
+	margin:2% auto 0;
+}
+.homeMenu .menuList{
+	width:23%;
+	margin:0 2% 2% 0;
+	background:#d51c36;
+	float:left;
+}
+.homeMenu .first{
+	margin:0 2% 2% 1%;
+}
+.homeMenu .last{
+	margin:0 0 2% 0;
+}
+.homeMenu .menuList img{
+	width:100%;
+}
+
+
+
+
+
+
+
+
+
+

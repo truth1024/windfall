@@ -1,0 +1,92 @@
+.classify{
+	width:94%;
+	height:35px;
+	line-height:35px;
+	padding:0 3%;
+	font-size:18px;
+	background:#fff;
+}
+.classify .toL,
+.classify .toR{
+	width:5%;
+	margin-right:2%;
+	font-size:16px;
+}
+.classify .toR{
+	text-align:right;
+	margin:0 0 0 2%;
+}
+.classify .toL img,
+.classify .toR img{
+	height:15px;
+	vertical-align:middle;
+}
+
+.classify .classifyCon{
+	width:86%;
+	height:35px;
+	overflow:hidden;
+}
+.classify .classifyCon li{
+	float:left;
+}
+.classify .classifyCon li a{
+	color:#484848;
+	padding:0 10px;
+}
+.classify .classifyCon li a.cur{
+	color:#fff;
+	background:#d51c36;
+}
+
+.showUsedCar{
+	width:94%;
+	margin:3% auto 0;
+	padding-bottom:50px;
+}
+.showUsedCar .usedCarList{
+	width:48%;
+	margin-bottom:3%;
+	position:relative;
+}
+.showUsedCar .usedCarList .img{
+	width:100%;
+	display:block;
+}
+.showUsedCar .usedCarList p{
+	width:100%;
+	height:30px;
+	background:rgba(255,255,255,0.7);
+	position:absolute;
+	bottom:0;
+	left:0;
+	line-height:30px;
+	font-size:14px;
+	border-bottom:1px solid #b4b1ac;
+}
+.showUsedCar .usedCarList p span[class=fL]{
+	padding-left:2%;
+}
+.showUsedCar .usedCarList p span[class=fR]{
+	padding-right:2%;
+	font-size:18px;
+	color:#a40000;
+}
+.showUsedCar .usedCarList div{
+	width:40%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.showUsedCar .usedCarList div img{
+	width:100%;
+}
+
+
+
+
+
+
+
+
+

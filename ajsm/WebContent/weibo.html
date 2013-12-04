@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=yes">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>车友天地</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/common.css" />
+    <style type="text/css">
+        iframe{
+            width: 100%;
+            overflow: visible;
+        }
+    </style>
+    <script src="js/jquery-1.8.0.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/header_footer.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('iframe').css({height:$(window).height()-84});
+            $(window).resize(function(){
+                $('iframe').css({height:$(window).height()-84});
+            });
+        });
+    </script>
+</head>
+
+<body>
+<!--header start-->
+<div class="header">
+	<div class="fL">
+    	<a href="javacript:history.go(-1);"></a>
+    </div>
+    <h1>车友天地</h1>
+	<div class="fR">
+    	<a href="index.html"></a>
+    </div>
+</div>
+<!--header end-->
+<iframe src="http://m.weibo.cn/2428160385"></iframe>
+
+</body>
+</html>

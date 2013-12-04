@@ -1,0 +1,59 @@
+body{	
+	background:#fff;
+}
+.showBanner {
+	width:100%;
+	display:block;
+}
+.showContent {
+	width:100%;
+	padding:4% 0 50px;
+}
+.typeList{
+	width:88%;
+	height:60px;
+	padding:3%;
+	margin:0 3% 2%;
+	background:#f2f4f3;
+}
+.typeImg,
+.typeIntro{
+	float:left;
+}
+.typeImg{
+	height:60px;
+	margin-right:5%;
+}
+.typeImg img{
+	height:100%;
+}
+.typeIntro{
+	width:60%;
+	font-size:13px;
+	font-weight:bold;
+	color:#000;
+	line-height:20px;
+}
+.typeTo{
+	float:right;
+}
+.typeTo img{
+	height:14px;
+	margin-top:23px;
+}
+
+/*----order driving----*/
+.driving{
+	font-size:14px;
+}
+.driving .name{
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 0 10px;
+}
+.driving p img{
+	height:15px;
+	margin-left:10px;
+	vertical-align:middle;
+}
+

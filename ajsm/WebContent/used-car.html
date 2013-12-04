@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=yes">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>二手车展示</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/details.css"/>
+    <link rel="stylesheet" href="css/used-car.css"/>
+
+    <script src="js/jquery-1.8.0.js"></script>
+    <script src="js/header_footer.js"></script>
+    <script src="js/verify.js"></script>
+    <script type="text/javascript">
+        var clickNum = 0;
+        liNum = 0;
+        $(function(){
+            var $li = $('.classifyCon li');
+            liNum = $li.length;
+            $('.classifyCon li a:eq(0)').addClass('cur');
+            $('.classifyCon ul').append($('.classifyCon ul').html());
+            
+            $('body').delegate('.usedCarList','click',function(){
+            	location.href = 'used-details.html';
+            });
+        });
+        
+        //箭头点击事件
+            function arrow(direction){
+                var $ul = $('.classifyCon ul');
+                var oldMarginLeft = parseInt($ul.css('marginLeft'));
+                var newMarginLeft = 0;
+                var addLeft = 0;
+                if(direction == 'left'){
+                    if(clickNum == liNum){
+                        $ul.css('marginLeft',0);
+                        clickNum = 1;
+                        return ;
+                    }else{
+                        clickNum++;
+                        addLeft = $ul.children('li').eq(clickNum).width();
+                        newMarginLeft = oldMarginLeft-addLeft;
+                    }
+                }
+                $ul.animate({marginLeft:newMarginLeft},400);
+            };
+    </script>
+</head>
+
+<body>
+<!--header start-->
+<div class="header">
+	<div class="fL">
+    	<a href="javascript:history.go(-1);"></a>
+    </div>
+    <h1>二手好车</h1>
+	<div class="fR">
+    	<a href="index.html"></a>
+    </div>
+</div>
+<!--header end-->
+
+<!--tab & content start-->
+<div id="tab">
+	<!-- nav start -->
+	<div id="nav">
+		<ul>
+			<li><a href="javascript:;" class="on">二手车展示</a></li>
+            <li><a href="javascript:;">二手车评估</a></li>
+		</ul>
+		<div class="navBg"></div>
+    </div>
+	<!-- nav end -->
+    
+	<!--content start-->
+    <div class="nav_content">
+        <div id="slideDiv" class="slideDiv">
+        	<!--used-car-show start-->
+            <div id="used-car-show">
+                <div class="classify">
+                	<a href="javascript:arrow('left');" class="toL fL"><img src="images/toL.png" /></a>
+                    <div class="classifyCon fL">
+                    	<ul>
+                        	<li><a href="javascript:;">A1</a></li>
+                        	<li><a href="javascript:;">A3</a></li>
+                        	<li><a href="javascript:;">A4L</a></li>
+                        	<li><a href="javascript:;">A5</a></li>
+                        	<li><a href="javascript:;">A6</a></li>
+                        	<li><a href="javascript:;">A7</a></li>
+                        	<li><a href="javascript:;">A8</a></li>
+                        	<li><a href="javascript:;">A9</a></li>
+                        </ul>
+                    </div>
+                	<a href="javascript:;" class="toR fL"><img src="images/toR.png" /></a>
+                </div>
+                
+                <div class="showUsedCar clearfix">
+                	<div class="usedCarList fL">
+                    	<img src="images/usedcar.jpg" class="img" />
+                        <p>
+                            <span class="fL">奥迪Q7</span>
+                            <span class="fR">￥27.5万</span>
+                        </p>
+                        <div><img src="images/icon.png" /></div>
+                    </div>
+                	<div class="usedCarList fR">
+                    	<img src="images/usedcar.jpg" class="img" />
+                        <p>
+                            <span class="fL">奥迪Q7</span>
+                            <span class="fR">￥27.5万</span>
+                        </p>
+                    </div>
+                	<div class="usedCarList fL">
+                    	<img src="images/usedcar.jpg" class="img" />
+                        <p>
+                            <span class="fL">奥迪Q7</span>
+                            <span class="fR">￥27.5万</span>
+                        </p>
+                        <div><img src="images/icon.png" /></div>
+                    </div>
+                	<div class="usedCarList fR">
+                    	<img src="images/usedcar.jpg" class="img" />
+                        <p>
+                            <span class="fL">奥迪Q7</span>
+                            <span class="fR">￥27.5万</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        	<!--used-car-show end-->
+            
+        	<!--used-car-assess start-->
+            <div id="used-car-assess">
+                <div class="signUp">
+                    <p>车系：</p>
+                    <select class="buyTime">
+                        <option>在此选择您的车系</option>
+                        <option>奥迪A4L</option>
+                        <option>奥迪A6</option>
+                        <option>奥迪Q5</option>
+                        <option>奥迪Q7</option>
+                    </select>
+                    <img src="images/inputArrow.png" class="signArrow" />
+                </div>
+                <div class="signUp">
+                    <p>车型：</p>
+                    <select class="buyTime">
+                        <option>在此选择您的车型</option>
+                        <option>奥迪A4L</option>
+                        <option>奥迪A6</option>
+                        <option>奥迪Q5</option>
+                        <option>奥迪Q7</option>
+                    </select>
+                    <img src="images/inputArrow.png" class="signArrow" />
+                </div>
+                <div class="signUp">
+                    <p>上牌年份：</p>
+                    <select class="buyTime">
+                        <option>在此选择您的上牌年份</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                    </select>
+                    <img src="images/chooseTime.png" class="signArrow" />
+                </div>
+                <div class="signUp">
+                    <p>车辆属地：</p>
+                    <select class="buyTime">
+                        <option>在此选择您的车辆属地</option>
+                        <option>北京</option>
+                        <option>天津</option>
+                        <option>河北</option>
+                        <option>黑龙江</option>
+                    </select>
+                    <img src="images/inputArrow.png" class="signArrow" />
+                </div>
+                <div class="signUp">
+                    <p>行驶里程：</p>
+                    <input type="text" value="在此填写行驶里程(万公里)" />
+                </div>
+                
+                <div class="signSubmit">
+                    <a href="javascript:;"><img id="submit" src="images/submit.png" /></a>
+                </div>
+            </div>
+        	<!--used-car-assess start-->
+        </div>
+    </div>
+<!--content end-->
+</div>   
+<script src="js/all.js"></script>
+<!--tab & content end-->
+</body>
+</html>

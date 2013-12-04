@@ -1,0 +1,78 @@
+
+/* 二手车详情*/
+.escxq_zs_title{background: #e9e9e9; height:33px;width: 100%; background-size: 100% 100%;}
+.escxq_zs_title h3{ line-height: 33px;}
+.escxq_zs_nr dl{ width: 100%;}
+.escxq_zs_nr dl dt{ float: left; width: 66%;}
+.escxq_zs_nr dl dt p{ background: #b1b1b1; height:135px; width: 180px; display: block;-webkit-transform:rotate(-4deg); margin: 25px 0 30px 5px ;}
+.escxq_zs_nr dl dt p span{background: #8d8d8d; height:135px; width: 180px; display: block;-webkit-transform:rotate(4deg); margin: 25px 0 30px 2px ;}
+.escxq_zs_nr dl dt p span img{ border: 2px solid #fff;width: 171px; height: 126px; margin:3px 0 0 2px;  border-radius: 3px;}
+.escxq_zs_nr dl dd{ float: right; width: 34%; text-align:left;}
+.escxq_zs_nr dl dd span{ margin-top:30px; display: block;}
+.escxq_zs_nr dl dd a{ text-align: center; line-height: 26px; text-decoration: none; color: #fff; background:-webkit-linear-gradient(top, #d9334a,#c11a31);
+ height: 26px; width: 85px; display: block; margin-top: 8px; margin-left:18px;  border-radius: 5px;box-shadow: 1px 2px 0px #ae0f25; border-bottom: 1px solid #ae0f25;}
+.escxq_zs_nr_cs{  clear: both;}
+.escxq_zs_nr_cs h1{ font-size: 18px; font-weight: bold; padding-left: 5px;}
+.escxq_zs_nr_cs p{ text-indent: 0px; padding-left:0 5px 0 5px;  width: 100%;  word-wrap:break-word; }
+.escxq_zs_nr ul.phos{ width: 100%; clear:both; height: 400px; }
+.escxq_zs_nr ul.phos li{float: left; width:25%;  text-align: center; }
+.escxq_zs_nr ul.phos img{height:53;width: 71px; display: block; border:3px solid #fff; }
+
+
+/* 精品展示*/
+.jpzs{}
+.jpzs_ad{ height:auto; }
+.jpzs_ad p{ background: url(../images/jpzs_img1.png) no-repeat; background-size: 100% 100%; height: 103px; position: relative; }
+.jpzs_ad p a{ background: url(../images/jpzs_button.png) no-repeat; height:30px; width: 90px; background-size: 100% 100%; display: block; position: absolute; left: 65%; top: 60px; text-indent: -9999px; }
+.jpzs ul li dl{position: relative; }
+.jpzs ul li{ position: relative; text-align: left; width: 47%; margin-top:10px; margin-left:6px; margin-right:1px;  height: 120px; background: #fff;min-width: 140px; box-shadow: 0px 1px 3px #666; float: left;}
+.jpzs ul li dl samp{ display: block; background:url(../images/new_ico.png) no-repeat; background-size: 100% 100%; position: absolute; left: 0; top: 0; width: 59px; height:43px; text-indent: -9999px;}
+.jpzs ul li dl dt{ border-bottom: 2px solid #f8c6b8; background: #fff;   text-align: center;; }
+.jpzs ul li dl dt img{ width: 140px; height: 88px;}
+.jpzs ul li dl dd{ height:25px;line-height: 25px; padding:3px 5px 0 5px;}
+.jpzs ul li dl dd em{ float: right; color: #a40000; }
+
+/* 今日限行*/
+.split{ background: url(../images/number_background.jpg) center top no-repeat;min-height:480px;background-size:100% 100%; min-width:320px; }
+.query {padding-top:20px; }
+.query p,.yjcx_title p{ text-align:center; color:#fff; text-shadow:1px 1px 1px #666; margin-bottom:5px; font-size:14px; }
+.query p span,.yjcx_title p span{ font-size:24px; display:block; font-weight:bold; letter-spacing:3px;}
+.split form{background: url(../images/today-back.png) no-repeat  center 0px; background-size:90% 90%; min-height:341px; min-width:320px; position:relative;}
+.split form input.numb_s{ background:none; position:relative;left:21%; top:0%; font-size:110px; margin-top:90px; text-align: left; float:left; width:30%;}
+.split form input.numb_g{background:none; float:left;font-size:110px;position:relative;left:32%; top:0%;  width:30%;margin-top:90px; }
+.split ul { margin:0 20px 20px;  height:200px; } 
+.split ul li{ height:180px; background:#fff;-webkit-Opacity:0.6;width:13.9%; float:left; text-align:center; box-shadow: 0px 1px 5px #000; border-radius: 5px; border-left: 1px solid #fff;}
+.split ul li dl dt {  height:90px; line-height: 90px;}
+.split ul li dl dd{ height: 110px; margin-top: 15px;}
+
+/* 油价查询*/
+.yjcx{background: url(../images/gasoline_background.jpg) center top no-repeat;min-height:600px;background-size:100% 100%; min-width:320px; color: #fff;}
+.yjcx_title{padding-top:20px; text-align: center;}
+.yjcx_nr{ width: 100%;}
+.yjcx_nr ul{ margin:20px 0 20px 0; display:inline-block;}
+.yjcx_nr ul li{float: left;  position: relative; text-align: center; margin-top: 10px; height:58px;width: 96%; background: #d6d6d6 url(../images/split.png) no-repeat 30% 42%; margin-left: 7px;border-radius: 5px; box-shadow:0 1px 5px #000; -webkit-Opacity:0.7;color: #333; line-height: 48px; }
+.li_left{ float: right; width: 15%;line-height: 58px; }
+.li_right{ float: left;width: 32%;line-height: 58px; text-align:left; margin-left:5px;}
+.li_center{ float:right;width: 45%; text-align: left;  position: relative; background-size: 7% 100%; padding-left: 15px;}
+.li_center input{ background: none; width: 33px; height: 50px; background:url(../images/digit_board.png) no-repeat; margin-top:5px; text-align:center; color:#fff; font-size:30px; }
+.li_center input.input_1{ background:url(../images/digit_board2_03.png) no-repeat; width: 45px; height: 50px; text-indent: -10px;margin-left:0px;}
+.yjcx_nr ul li.check{background: #595959 url(../images/split.png) no-repeat 30% 42%; color:#fff; }
+.calculation{ width:100%; margin-left:10px;font-weight:bold;}
+
+.calculation form .p_1 input,.calculation form .p_2 input{ width:25%; clear:both; border:3px solid #135c89;border-radius: 5px; height:40px; margin-top:10px;box-shadow:1px 1px 2px #666;}
+.calculation form .p_2 input{ border:3px solid #c5c5c5;;}
+
+.calculation form .p_1 span ,.calculation form .p_2 span{width:15%; display:inline-block; clear:both; margin:0 10px 0 10px;}
+
+.calculation form .p_1 em,.calculation form .p_2 em{width:20%; display:inline-block;}
+
+
+
+
+
+
+
+
+
+
+

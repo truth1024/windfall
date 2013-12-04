@@ -1,0 +1,60 @@
+.personalCenter{
+	width:92%;
+	margin:0 auto;
+}
+.personal{
+	width:100%;
+	padding:5% 0;
+}
+.personal_img{
+	width:30%;
+	margin-right:4%;
+}
+.personal_img img{
+	width:100%;
+}
+.personal_name{
+	font-size:14px;
+}
+.personal_name .number{
+	font-size:18px;
+	padding-bottom:3px;
+}
+.personal_tel{
+	width:15%;
+}
+.personal_tel img{
+	width:100%;
+}
+
+.personalList{
+	width:100%;
+	height:44px;
+	border:1px solid #c6c6c6;
+	border-radius:5px;
+	line-height:44px;
+	font-size:16px;
+	margin-bottom:10px;
+	-webkit-box-shadow:1px 1px 1px 1px #c6c6c6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0),to(#dfdfdf));
+}
+.personalList span[class=fL]{
+	padding-left:4%;
+}
+.personalList span[class=fR]{
+	padding-right:4%;
+}
+.personalList strong{
+	color:#c10000;
+	font-size:20px;
+}
+.personalList strong.color{
+	color:#7c9d17;
+}
+
+
+
+
+
+
+

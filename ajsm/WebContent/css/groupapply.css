@@ -1,0 +1,110 @@
+.div_img {
+	width:100%;
+	background: #F5F5F3;
+	border-bottom: 2px solid #B7B6B6;
+}
+.div_img img {
+	width:100%;
+}
+.div_img h1{
+	margin: 10px 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#details {
+	padding:0 0 50px;
+}
+
+.groupBuy{
+	width:94%;
+	margin:0 auto;
+	padding-bottom:50px;
+	position:relative;
+	color:#909090;
+}
+.groupBuy img{
+	width:100%;
+	display:block;
+}
+
+.groupBuy .groupPosition{
+	width:80%;
+	position:absolute;
+	left:0;
+	top:0;
+	padding:0 10%;
+	font-size:14px;
+}
+.groupBuy .groupPosition p{
+	text-indent:0;
+}
+.groupBuy .groupInfo{
+	width:98%;
+	padding:0 1%;
+	margin-bottom:2%;
+	border-bottom:3px dashed #939393;
+}
+.groupBuy .groupInfo p{
+	color:#3c3c3c;
+	margin:3% 0;
+	clear:both;
+}
+.groupBuy .groupInfo .fl{
+	width:50%;
+	float:left;
+}
+.groupBuy .groupInfo .fr{
+	width:50%;
+	float:right;
+	text-align:right;
+	color:#909090;
+}
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+* html .clearfix {height: 1%;}
+
+.groupBuy .rules{
+	width:100%;
+	padding:0 1%;
+}
+.groupBuy .rules span{
+	color:#3c3c3c;
+}
+.groupBuy .rules p{
+	margin:1% 0;
+}
+.groupBuy .subButton{
+	width:100%;
+	margin-top:4%;
+}
+.groupBuy .subButton .afl{
+	width:45%;
+	float:left;
+}
+.groupBuy .subButton .afr{
+	width:45%;
+	float:right;
+}
+.groupBuy .subButton a img{
+	width:100%£»
+}
+
+
+
+
+
+
+
+
+
+
+
+

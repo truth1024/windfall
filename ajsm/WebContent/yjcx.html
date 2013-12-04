@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1,user-scalable = 0" />
+<title>北京油价查询</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/min_width.css" rel="stylesheet" type="text/css" media="screen and (max-width:480px)" />
+<link href="css/max768.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)" />
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+body{
+	font-size: 1em;
+	font-family: 微软雅黑;
+	color: white;
+	background-color: gray;
+}
+
+#wrap{
+	text-align: center;
+	margin: 0 auto;
+	width: 320px;
+	background-image: url("images/gasoline_background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#wrap2{
+	text-align: center;
+	margin: 0 auto;
+	width: 320px;
+	background-image: url("images/gasoline_background2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#wrap3{
+	text-align: center;
+	margin: 0 auto;
+	width: 320px;
+	background-image: url("images/gasoline_background3.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+/*CSS of the header*/
+#header{
+	color: white;
+	padding: 10px;
+	text-shadow: 1px 1px  3px #000;
+}
+
+#title{
+	font-size: 1.5em;
+	padding-bottom: 10px;
+}
+
+/*CSS of the list*/
+#infor{
+	color: white;
+	font-size: .8em;
+}
+
+#wrap #ul{
+	margin: 10px auto;
+	width: 310px;
+}
+
+#wrap #ul li{
+	list-style: none;
+	width: 300px;
+	height: 48px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	margin: 5px;
+	font-size: .8em;
+}
+#wrap #ul li img{ display:inline-block;}
+.radio{
+	position: relative;
+	top: -5px;
+	margin: 5px;
+	width: 18px;
+}
+.unchecked{
+	color: #533b35;
+	background-color: rgba(255,255,255,.5);
+}
+.checked{
+	color: white;
+	background-color: rgba(0,0,0,.4);
+}
+
+.gas_name{
+	position: relative;
+	top: -13px;
+	width: 50px;
+	display: inline-block;
+	text-align: left;
+}
+.split{
+	height: 35px;
+	margin-top: 8px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+.price_digit, .price_dot{
+	position: relative;
+	top: -12px;
+	font-size: 1.5em;
+	color: white;
+	font-weight: bold;
+}
+.price_digit{
+	background-image: url("images/digit_board.png");
+	background-repeat: no-repeat;
+	padding: 4px 7px;
+	display: inline-block;
+	width: 12px;
+}
+.measure{
+	position: relative;
+	top: -10px;
+	margin: 10px;
+}
+
+/*CSS for the calculator*/
+#calculator{
+	font-size: 1em;
+	padding:0 10px 10px;
+}
+
+input{
+	width: 94px;
+	height: 35px;
+	font-size: 1em;
+	font-family: 微软雅黑;
+	text-align: right;
+	padding-right: 8px;
+	background-color: rgba(255,255,255,.5);
+	border-radius: 5px;
+	border: 5px solid gray;
+	box-shadow:5px 5px 5px #999 inset;
+}
+
+input:focus{
+	border: 5px solid #056cad;
+}
+
+.result{
+	width: 80px;
+	text-align: right;
+	display: inline-block;
+	padding: 7px;
+	font-size: 1.2em;
+}
+</style>
+
+</head>
+
+<body>
+<header class="header">
+      <div  class="clear header_bg">
+        <a href="javascript:history.go(-1)" class="header_back"><font class="header_back_img">箭头</font></a>
+        <h1 class="header_title" style=" color:#000;">北京油价查询</h1>
+        <a href="index.html" class="header_host"><font class="header_host_img">主页</font></a>
+      </div>
+    </header>
+    <content class="no_nav_content">
+      <div id="wrap">
+	<div id="header">
+		<p id="title">北京油价查询</p>
+		<p id="date"></p>
+	</div>
+	<div id="main">
+		<p id="infor">选择汽(柴)油种类可在下方进行计算</p>
+		<ul id="ul">
+			<li class="unchecked" onClick="change(0)" >
+				<img class="radio" src="images/radio_unchecked.png" />
+				<span class="gas_name">90汽油</span>
+				<img class="split" src="images/split.png" />
+				<span class="price_digit">7</span>
+				<span class="price_dot">.</span>
+				<span class="price_digit">3</span>
+				<span class="price_digit">0</span>
+				<span class="measure">元／升</span>
+			</li>
+			<li class="checked" onClick="change(1)" >
+				<img class="radio" src="images/radio_checked.png" />
+				<span class="gas_name">93汽油</span>
+				<img class="split" src="images/split.png" />
+				<span class="price_digit">8</span>
+				<span class="price_dot">.</span>
+				<span class="price_digit">3</span>
+				<span class="price_digit">4</span>
+				<span class="measure">元／升</span>
+			</li>
+			<li class="unchecked" onClick="change(2)" >
+				<img class="radio" src="images/radio_unchecked.png" />
+				<span class="gas_name">97汽油</span>
+				<img class="split" src="images/split.png" />
+				<span class="price_digit">8</span>
+				<span class="price_dot">.</span>
+				<span class="price_digit">4</span>
+				<span class="price_digit">4</span>
+				<span class="measure">元／升</span>
+			</li>
+			<li class="unchecked" onClick="change(3)" >
+				<img class="radio" src="images/radio_unchecked.png" />
+				<span class="gas_name">0#柴油</span>
+				<img class="split" src="images/split.png" />
+				<span class="price_digit">6</span>
+				<span class="price_dot">.</span>
+				<span class="price_digit">5</span>
+				<span class="price_digit">8</span>
+				<span class="measure">元／升</span>
+			</li>
+		</ul>
+		<div id="calculator">
+			<div style="margin-bottom: 6px;">
+				<input class="unfocused" value="0" id="in_1" onKeyDown="cal_1()" onKeyUp="cal_1()" />
+				<span>升 = <span class="result" id="result_1">0.00</span>元</span>
+			</div>
+			<div>
+				<input class="unfocused" value="0" id="in_2" onKeyDown="cal_2()" onKeyUp="cal_2()" />
+				<span>元 = <span class="result" id="result_2">0.00</span>升</span>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/js.js" type="text/javascript"></script>
+    <script type="text/javascript">
+var checked = 1;
+
+function ini () {
+	date();
+}
+
+function date () {
+	var today=new Date();
+	var y=today.getFullYear();
+	var m=today.getMonth();
+	var d=today.getDate();
+	var weekday=new Array(7)
+		weekday[0]="日"
+		weekday[1]="一"
+		weekday[2]="二"
+		weekday[3]="三"
+		weekday[4]="四"
+		weekday[5]="五"
+		weekday[6]="六";
+	document.getElementById('date').innerHTML=y+"年"+(m+1)+"月"+d+"日   周"+weekday[today.getDay()];
+}
+
+function change (order) {
+	document.getElementsByTagName('li')[checked].className = 'unchecked';
+	document.getElementsByTagName('li')[checked].getElementsByTagName('img')[0].src="images/radio_unchecked.png";
+	document.getElementsByTagName('li')[order].className = 'checked';
+	document.getElementsByTagName('li')[order].getElementsByTagName('img')[0].src="images/radio_checked.png";
+	checked = order;
+	cal_1();
+	cal_2();
+}
+
+function cal_1 () {
+	document.getElementById('in_1').value=document.getElementById('in_1').value.replace(/\D/g,'');
+	if (document.getElementById('in_1').value > 9999) {
+		document.getElementById('in_1').value = 9999;
+	};
+	if(document.getElementById('in_1').value == ''){
+		document.getElementById('in_1').value = 0;
+	}
+	document.getElementById('in_1').value = parseInt(document.getElementById('in_1').value, 10);
+	var money = document.getElementById('in_1').value * document.getElementsByTagName('li')[checked].getElementsByTagName('span')[1].innerHTML;
+	document.getElementById('result_1').innerHTML = money.toFixed(2);
+}
+
+function cal_2 () {
+	document.getElementById('in_2').value=document.getElementById('in_2').value.replace(/\D/g,'');
+	if (document.getElementById('in_2').value > 99999) {
+		document.getElementById('in_2').value = 99999;
+	};
+	if(document.getElementById('in_2').value == ''){
+		document.getElementById('in_2').value = 0;
+	}
+	document.getElementById('in_2').value = parseInt(document.getElementById('in_2').value, 10)
+	var litre = document.getElementById('in_2').value / document.getElementsByTagName('li')[checked].getElementsByTagName('span')[1].innerHTML;
+	document.getElementById('result_2').innerHTML = litre.toFixed(2);
+}
+
+</script>
+
+    </content>
+
+</body>
+</html>
