@@ -16,6 +16,7 @@ window.onload = function(){
 	liNum = $('#bannerList ol li').length;
 	bannerWidth = wWidth-2*margin;
 	$bannerList.width(bannerWidth);
+	$('#bannerList ol li img').width(bannerWidth);
 	var bannerHeight = $('#bannerList ol li img:eq(0)').height();
 	$bannerList.height(bannerHeight);
 	$ol.width(2*liNum*bannerWidth);
