@@ -49,9 +49,9 @@ $(function(){
 
 	$('body').append($('<img style="display:none;" src="images/bt_back_s.png"/>'))
 	.append($('<img style="display:none;" src="images/bt_home_s.png"/>'));
-	for(var key in buttonArr){
-		ts(key,buttonArr[key]);
-	}
+		for(var key in buttonArr){
+			ts(key,buttonArr[key]);
+		}
 });
 
 function ts(id,obj){
@@ -65,7 +65,6 @@ function ts(id,obj){
 		}
 		// touch start listener
 		function touchStart(event){
-			event.preventDefault();
 			if(isImg){
 				canvas.src = 'images/'+id+'_s.png';
 			}else{
@@ -74,7 +73,6 @@ function ts(id,obj){
 		};
 
 		function touchEnd(event){
-		event.preventDefault();
 			if(isImg){
 				canvas.src = 'images/'+id+'.png';
 			}else{
